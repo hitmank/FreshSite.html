@@ -1,0 +1,24 @@
+#mainNavList{
+	width:100%;
+}
+
+.mainNavListItem{
+	width:33.33%;
+}
+
+#navBarHeaderContainer{
+	float:left;
+}
+#navBarContentContainer{
+	float:right;
+}
+
+.section-1 .slide-in-demo {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 4em;
+}
+            
