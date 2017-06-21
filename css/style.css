@@ -10,7 +10,20 @@ Primary style
 html {
   font-size: 62.5%;
 }
-
+.img-circle {
+    border-radius: 0%;
+    width: 100%;
+}
+.filterss {
+     position: absolute;
+    width: 160px;
+    min-height: 40px;
+    background-color: #dadada;
+    z-index: 300000;
+    top: 250px;
+    left: 100px;
+    text-align: center;
+}
 body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
