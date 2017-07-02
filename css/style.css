@@ -105,7 +105,7 @@ Main Components
   /*background-image: url("../img/coffeeMug.jpg");*/
 }
 [data-animation="parallax"] .cd-section:nth-of-type(2) > div, [data-animation="fixed"] .cd-section:nth-of-type(2) > div, [data-animation="opacity"] .cd-section:nth-of-type(2) > div {
-  background-image: url("../img/img-2.jpg");
+  /*background-image: url("../img/img-2.jpg");*/
 }
 [data-animation="parallax"] .cd-section:nth-of-type(3) > div, [data-animation="fixed"] .cd-section:nth-of-type(3) > div, [data-animation="opacity"] .cd-section:nth-of-type(3) > div {
   background-image: url("../img/img-3.jpg");

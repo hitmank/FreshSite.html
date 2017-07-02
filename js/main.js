@@ -131,6 +131,8 @@ jQuery(document).ready(function($){
     }
 
     function prevSection(event) {
+	
+
     	//go to previous section
     	typeof event !== 'undefined' && event.preventDefault();
     	
@@ -153,9 +155,12 @@ jQuery(document).ready(function($){
         }
 
         resetScroll();
+        			scrambleOthers()
+
     }
 
     function nextSection(event) {
+
     	//go to next section
     	typeof event !== 'undefined' && event.preventDefault();
 
@@ -176,6 +181,10 @@ jQuery(document).ready(function($){
             actual = actual +1;
         }
         resetScroll();
+       	// $.getScript("js/textPlay.js",function(){
+			scrambleOthers()
+			// });
+
     }
 
     function unbindScroll(section, time) {
