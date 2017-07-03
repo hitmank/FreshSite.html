@@ -10,7 +10,7 @@
 background-image:
     linear-gradient(
       to right, 
-      white, #fffaf7
+      white, orange
     );
 
 }
@@ -24,7 +24,7 @@ background-image:
   background-image:
     linear-gradient(
       to right, 
-      #fffaf7, gray
+      orange, darkred
     );
 }
 .soup-title {
@@ -105,3 +105,18 @@ button {
   z-index: 9001;
   position: relative;
 }
+
+
+@keyframes example {
+    0%   {opacity:1;}
+    
+    50%  {opacity: 0;}
+    
+    100% {opacity:1;}
+}
+
+.hello {
+  animation-name : example;
+  animation-duration : 2s;
+}
+

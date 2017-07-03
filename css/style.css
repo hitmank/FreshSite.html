@@ -20,7 +20,7 @@ html {
     min-height: 40px;
     background-color: #dadada;
     z-index: 300000;
-    top: 250px;
+    top: 90px;
     left: 100px;
     text-align: center;
 }
@@ -35,12 +35,13 @@ body {
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
-  /*display: none;*/
+  display: none;
 }
 @media only screen and (min-width: 200px) {
   body::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
+    display: none;
   }
 }
 
@@ -230,3 +231,19 @@ Main Components
     display: block;
   }
 }
+
+
+/*
+#three-container1 canvas {
+  background-image: radial-gradient(#666, #333);
+  width: 600px;
+    position: ABSOLUTE;
+    height: 800px;
+    top: -200px;
+    right: -140px;
+}*/
+
+
+
+
+

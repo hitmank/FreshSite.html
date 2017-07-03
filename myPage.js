@@ -24,3 +24,13 @@ $(document).on('click', 'a', function(event){
         ]);
     });
 })(jQuery);
+
+
+function displayNavDropDown() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
