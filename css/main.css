@@ -1,6 +1,18 @@
 body {
     margin: 4px;
 }
+@keyframes kaka {
+    0%   {color:white;}
+    
+    50%  {color:red;}
+    
+    100% {color:white;}
+}
+
+.animateColor {
+  animation-name : kaka;
+  animation-duration : 2s;
+}
 
 
 /* Add a black background color to the top navigation */

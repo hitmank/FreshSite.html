@@ -120,3 +120,16 @@ button {
   animation-duration : 2s;
 }
 
+@keyframes kaka {
+    0%   {color:white;}
+    
+    50%  {color:orange;}
+    
+    100% {color:white;}
+}
+
+.animateColor {
+  animation-name : kaka;
+  animation-duration : 2s;
+}
+

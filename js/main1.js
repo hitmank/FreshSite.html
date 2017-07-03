@@ -1,5 +1,44 @@
 jQuery(document).ready(function($){
 
+	$('#uscDiv').css('display','none');
+	$('#bmsitDiv').css('display','none');
+	$('#bcbsDiv').css('display','none');
+
+	function uscImageAnimation() {   
+		$('#haha').animate({
+  		 left: '+=0px'}, 
+  		 {
+   				
+   			duration: 500,
+   			complete: function(){
+   					$('#haha').addClass('animateColor')
+   					$('#haha').animate({
+  		 			left: '-=0px'}, {
+   					
+   					duration: 500,
+   					complete: function(){
+   							$('#uscDiv').css('display','block');
+   							$('#bmsitDiv').css('display','block');
+   							$('#bcbsDiv').css('display','block');
+   						$('#uscDiv').addClass('animated lightSpeedIn')
+   						$('#bmsitDiv').addClass('animated bounceIn')
+   						$('#bcbsDiv').addClass('animated flipInX')
+
+   					}
+   				}) 
+
+
+
+   		}
+    	
+ 	}
+ 	);
+	}
+
+	 // use setTimeout() to execute
+ 	setTimeout(uscImageAnimation, 1000)
+
+
 	$('#menu2').click(function(event){
 
 		nextSection(event);
