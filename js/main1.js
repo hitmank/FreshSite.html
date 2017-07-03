@@ -20,9 +20,9 @@ jQuery(document).ready(function($){
    							$('#uscDiv').css('display','block');
    							$('#bmsitDiv').css('display','block');
    							$('#bcbsDiv').css('display','block');
-   						$('#uscDiv').addClass('animated lightSpeedIn')
-   						$('#bmsitDiv').addClass('animated bounceIn')
-   						$('#bcbsDiv').addClass('animated flipInX')
+   						$('#uscDiv').addClass('animated fadeInDownBig')
+   						$('#bmsitDiv').addClass('animated fadeInUpBig')
+   						$('#bcbsDiv').addClass('animated fadeInLeftBig')
 
    					}
    				}) 
