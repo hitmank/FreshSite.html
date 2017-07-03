@@ -1,8 +1,11 @@
 jQuery(document).ready(function($){
 
+	$('#myPic').css('border-radius','51%')
 	$('#uscDiv').css('display','none');
 	$('#bmsitDiv').css('display','none');
 	$('#bcbsDiv').css('display','none');
+	
+	$('#scrollAnimationDiv').css('display','none');
 
 	function uscImageAnimation() {   
 		$('#haha').animate({
@@ -20,9 +23,12 @@ jQuery(document).ready(function($){
    							$('#uscDiv').css('display','block');
    							$('#bmsitDiv').css('display','block');
    							$('#bcbsDiv').css('display','block');
-   						$('#uscDiv').addClass('animated fadeInDownBig')
-   						$('#bmsitDiv').addClass('animated fadeInUpBig')
-   						$('#bcbsDiv').addClass('animated fadeInLeftBig')
+   							$('#scrollAnimationDiv').css('display','block');
+   						$('#uscDiv').addClass('animated flipInX')
+   						$('#bmsitDiv').addClass('animated flipInY')
+   						$('#bcbsDiv').addClass('animated flipInX')
+   						$('#scrollAnimationDiv').addClass('animated fadeIn')
+
 
    					}
    				}) 

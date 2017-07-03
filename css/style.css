@@ -23,6 +23,7 @@ html {
     top: 90px;
     left: 100px;
     text-align: center;
+    border-radius: 50%;
 }
 body {
   font-size: 1.6rem;
