@@ -1,11 +1,11 @@
-$(document).on('click', 'a', function(event){
-    event.preventDefault();
+// $(document).on('click', 'a', function(event){
+//     event.preventDefault();
 
-    $('html, body').animate({
-    	//delay(125);
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-});
+//     $('html, body').animate({
+//     	//delay(125);
+//         scrollTop: $( $.attr(this, 'href') ).offset().top
+//     }, 500);
+// });
 (function($) {
     $(document).ready(function() {
         $.jScrollability([

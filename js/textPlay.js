@@ -116,7 +116,7 @@ $('#three-container1').removeClass("hello")
       $(".mutable:eq(" + currentPage + ") > .soup-title > .letter").eq(i).css({
         left: $(".position-data:eq(" + currentPage + ") > .soup-title > .letter").eq(i).offset().left + "px",
         top: $(".position-data:eq(" + currentPage + ") > .soup-title > .letter").eq(i).offset().top + "px",
-         color: "cadetblue",
+         color: "black",
         zIndex: 9001,
              opacity: "1.0"
       });
@@ -173,7 +173,7 @@ $('#three-container1').removeClass("hello")
            $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
              left: randLeft,
               top: randTop,
-               color: "darkgoldenrod",
+               color: "#418082",
              zIndex: "initial",
              opacity: "0.3"
             });

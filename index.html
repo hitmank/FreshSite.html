@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/animate.css"> 
     <link rel="stylesheet" href="css/reset.css"> 
     <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="textPlay.css"> 
-    <link rel="stylesheet" type="text/css" href="myPage.css">
+    <link rel="stylesheet" href="css/textPlay.css"> 
+    <link rel="stylesheet" type="text/css" href="css/myPage.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="js/mousestop.min.js"></script> 
     <script src="js/modernizr.js"></script> 
-    <script type="text/javascript" src = "myPage.js"></script>
-    <script type="text/javascript" src = "jScroll.js"></script>
+    <script type="text/javascript" src = "js/myPage.js"></script>
+    <script type="text/javascript" src = "js/jScroll.js"></script>
     <script src="https://use.fontawesome.com/c9168d2ddc.js"></script> 
     
     <!-- Needed for Three animation -->
@@ -28,22 +28,17 @@
 
 
 
+
+
 </head>
 <body data-hijacking="on" data-animation="gallery">
-      <script>
-    THREE.ShapeUtils.triangulateShape = (function () {
-            var pnlTriangulator = new PNLTRI.Triangulator();
-            return function triangulateShape(contour, holes) {
-                return pnlTriangulator.triangulate_polygon([contour].concat(holes));
-            };
-        })();
-</script>
+      
 <div class="topnav" id="myTopnav">
-    <a class = "animated lightSpeedIn" href="#home">Top</a>
-    <a class = "animated lightSpeedIn"href="#news">My Work</a>
-    <a class = "animated lightSpeedIn"href="#contact">Education</a>
-    <a class = "animated lightSpeedIn"href="#about">Contact Me</a>
-    <a class = "animated lightSpeedIn"href="#about">Random</a>
+    <a href="#home">Top</a>
+    <a id = "menu2" href="#section2">My Work</a>
+    <a id = "menu3" href="#contact">Education</a>
+    <a id = "menu4" href="#about">Contact Me</a>
+    <a id = "menu5" href="#about">Random</a>
     <a href="javascript:void(0);" class="icon" onclick="displayNavDropDown()">&#9776;</a>
   </div>
 <section id="section1" class="cd-section visible" style="margin-top:52px;">
@@ -60,9 +55,9 @@
                             <source src="WEBM/video.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
                           </video>
                           <div style="width:100%;height:100%;position:absolute">
-                                <h2 class = "animated lightSpeedIn" style="font-family:coolio;position:absolute;left:284px;font-size:-webkit-xxx-large;color:black;top:-239px;color:beige">Karan Balakrishnan</h2>
-                                <h2 class = "animated lightSpeedIn" style="font-family:coolio;position:absolute;left:284px;font-size:-webkit-xxx-large;color:black;top:-163px;color:beige">Currently Pursuing My Masters in Computer Science</h2>
-                                <h2 class = "animated lightSpeedIn" style="font-family:coolio;position:absolute;left:284px;font-size:-webkit-xxx-large;color:black;top:-83px;color:beige">University of Southern California</h2>
+                                <h2  style="font-family:coolio;position:absolute;left:284px;font-size:-webkit-xxx-large;color:black;top:-239px;color:beige;height:0px;">Karan Balakrishnan</h2>
+                                <h2  style="font-family:coolio;position:absolute;left:284px;font-size:-webkit-xxx-large;color:black;top:-163px;color:beige;height:0px;">Currently Pursuing My Masters in Computer Science</h2>
+                                <h2  style="font-family:coolio;position:absolute;left:284px;font-size:-webkit-xxx-large;color:black;top:-83px;color:beige;height:0px;">University of Southern California</h2>
                             </div>
                          <div class="poster hidden">
                              <img src="Snapshots/video.jpg" alt="">
@@ -76,21 +71,11 @@
         <div id ="jaja"style="height:100%">
              <div id="imagey"style="float:right;width:50%;height:100%;">
                <div id="lalaDic"class = "lalaDiv" style = "width:90%;height:70%;margin: 0 auto;position:relative;top:20%;"> 
-                <!-- <div id="divimg1"style="width:48%;height:100%;"> -->
-                    <!-- <img id="img1" class = "lalaImg1" style="width:100%" src="img/spacegame.jpg"> -->
-               <!--  </div> -->
-                <!-- <div id="divimg2" style="width:48%;height:100%;"> -->
-                     <!-- <img id="img2" class = "lalaImg2" style="width:100%;" src="img/spacegame2.jpg"> -->
-                <!-- </div> -->
                   <div id="three-container1"></div>
-
-
-
               </div>  
              </div>
             <div id="soupy"style="float:left;width:50%;height:100%;font-family:coolio">
                  <div style="height:100%">
-
                       <div id="loader"></div>
                              <div id="soup-container">
                                <div id="segments">
@@ -100,42 +85,38 @@
                                  <span id="soup-next"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span>
                              </div>
                         </div> 
-            </div>            
-
-
+                  </div>            
             </div>
         </div>
     </section>
 
     <section id="section3"class="cd-section">
         <div>
-            <h2>ss</h2>
+            <h2>Education</h2>
         </div>
     </section>
 
     <section id="section4" class="cd-section">
         <div>
-            <h2>test</h2>
+            <h2>Links and Contact</h2>
         </div>
     </section>
-
-    <section class="cd-section">
+ <section id="section5" class="cd-section">
         <div>
-            <h2>test</h2>
+            <h2>Random TBD</h2>
         </div>
     </section>
-
     <nav>
         <ul class="cd-vertical-nav">
             <li><a href="#0" class="cd-prev inactive">Next</a></li>
             <li><a href="#0" class="cd-next">Prev</a></li>
         </ul>
     </nav> 
+
+<script src="js/textPlay.js"></script> 
+<script src="js/imageDIs.js"></script> 
 <script src="js/velocity.min.js"></script>
 <script src="js/velocity.ui.min.js"></script>
-<script src="js/textPlay.js"></script> 
 <script src="js/main1.js"></script> 
-<script src="js/imageDIs.js"></script> 
-
 </body>
 </html>                                     

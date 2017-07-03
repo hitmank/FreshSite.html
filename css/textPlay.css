@@ -17,7 +17,7 @@ background-image:
 
  @font-face { 
   font-family: coolio; 
-  src: url('heavy.otf');
+  src: url('../fonts/Cormorant-Bold.ttf');
    } 
 
 #imagey{
@@ -35,11 +35,11 @@ background-image:
   font-size: 22px;
 }
 .soup-title > .letter {
-  color: cadetblue;
+  color: black;
   /*opacity: 0.5;*/
 }
 .soup-desc > .letter {
-  color: darkgoldenrod;
+  color: #418082;
   /*opacity: 0.5;*/
 }
 html, body {

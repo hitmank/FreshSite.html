@@ -1,4 +1,29 @@
 jQuery(document).ready(function($){
+
+	$('#menu2').click(function(event){
+
+		nextSection(event);
+
+	});
+
+	$('#menu3').click(function(event){
+
+		gotoSection3FromSection1(event);
+		
+
+	});
+	$('#menu4').click(function(event){
+
+		gotoSection4FromSection1(event);
+		
+
+	});
+	$('#menu5').click(function(event){
+
+		gotoSection5FromSection1(event);
+		
+
+	});
 	//variables
 	var hijacking= $('body').data('hijacking'),
 		animationType = $('body').data('animation'),
@@ -158,7 +183,137 @@ jQuery(document).ready(function($){
         			scrambleOthers()
 
     }
+	function gotoSection3FromSection1(event) {
 
+    	//go to next section
+    	typeof event !== 'undefined' && event.preventDefault();
+
+        var visibleSection = sectionsAvailable.filter('.visible'),
+    		middleScroll = ( hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
+
+    	var animationParams = selectAnimation('parallax', middleScroll, 'next');
+    	unbindScroll(visibleSection.next('.cd-section'), animationParams[3]);
+
+        if(!animating && !visibleSection.is(":last-of-type") ) {
+            animating = true;
+            visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            .end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+            	if( hijacking == 'off') $(window).on('scroll', scrollAnimation);
+
+
+            var visibleSection = sectionsAvailable.filter('.visible')
+
+			visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            .end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+
+
+            });
+
+            });
+
+            actual = actual +1;
+        }
+        	resetScroll();
+			scrambleOthers()
+
+    }
+    function gotoSection4FromSection1(event) {
+
+    	//go to next section
+    	typeof event !== 'undefined' && event.preventDefault();
+
+        var visibleSection = sectionsAvailable.filter('.visible'),
+    		middleScroll = ( hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
+
+    	var animationParams = selectAnimation('parallax', middleScroll, 'next');
+    	unbindScroll(visibleSection.next('.cd-section'), animationParams[3]);
+
+        if(!animating && !visibleSection.is(":last-of-type") ) {
+            animating = true;
+            visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            .end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+            	if( hijacking == 'off') $(window).on('scroll', scrollAnimation);
+
+
+            var visibleSection = sectionsAvailable.filter('.visible')
+
+			visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            .end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+
+            	var visibleSection = sectionsAvailable.filter('.visible')
+
+				visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            	.end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+
+
+            });
+
+
+            });
+
+            });
+
+            actual = actual +1;
+        }
+        	resetScroll();
+			scrambleOthers()
+
+    }
+    function gotoSection5FromSection1(event) {
+
+    	//go to next section
+    	typeof event !== 'undefined' && event.preventDefault();
+
+        var visibleSection = sectionsAvailable.filter('.visible'),
+    		middleScroll = ( hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
+
+    	var animationParams = selectAnimation('parallax', middleScroll, 'next');
+    	unbindScroll(visibleSection.next('.cd-section'), animationParams[3]);
+
+        if(!animating && !visibleSection.is(":last-of-type") ) {
+            animating = true;
+            visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            .end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+            	if( hijacking == 'off') $(window).on('scroll', scrollAnimation);
+
+
+            var visibleSection = sectionsAvailable.filter('.visible')
+
+			visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            .end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+
+            	var visibleSection = sectionsAvailable.filter('.visible')
+
+				visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            	.end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+
+            		var visibleSection = sectionsAvailable.filter('.visible')
+
+				visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
+            	.end().next('.cd-section').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
+            	animating = false;
+            });
+            });
+
+
+            });
+
+            });
+
+            actual = actual +1;
+        }
+        	resetScroll();
+			scrambleOthers()
+
+    }
     function nextSection(event) {
 
     	//go to next section
@@ -570,3 +725,5 @@ $.Velocity
             [ { translateY: '-50%'}, 1]
         ]
     });
+
+
