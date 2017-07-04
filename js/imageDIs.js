@@ -49,9 +49,8 @@ THREE.ImageUtils.crossOrigin = "";
 
 
   var tl = new TimelineMax({repeat:-1, repeatDelay:2.5, yoyo: true});
-
-  tl.add(slide.transition(), 0);
-  tl.add(slide2.transition(), 0);
+  tl.add(slide.transition(), 0.5);
+  tl.add(slide2.transition(), 0.5);
 
   createTweenScrubber(tl);
 

@@ -75,40 +75,34 @@
   /*
    * Functions
    */
+   function showImage(number){
+            changeImage(number);
+               $('#three-container1').css('display','inline')
+
+              $('#three-container1 > canvas').removeClass('animated fadeInDown')
+              $('#three-container1 > canvas').addClass('animated fadeInDown')
+
+   }
    function showImageForPage(pageNumber){
     if (pageNumber == 0){
 
         $('#three-container1').empty()
-        // $('#three-container1').removeClass("animated rollOut")
-        changeImage(0)
-                        $('#three-container1').removeClass("hello")
+        $('#three-container1').css('display','none')
+        setTimeout(function(){showImage(0)},2400)
 
-                $('#three-container1').addClass("hello")
-
-        // $('#three-container1').addClass("animated rollIn")
-        // $('#three-container1').removeClass("animated rollIn")
     }
     else if(pageNumber == 1){
 
         $('#three-container1').empty()
-        // $('#three-container1').removeClass("animated rollOut")
-        changeImage(1)
-$('#three-container1').removeClass("hello")
-
-                $('#three-container1').addClass("hello")
-        // $('#three-container1').addClass("animated rollIn")
-        // $('#three-container1').removeClass("animated rollIn")
+        $('#three-container1').css('display','none')
+        setTimeout(function(){showImage(1)},2400)
     }
     else if(pageNumber == 2){
  
-         $('#three-container1').empty()
-        // $('#three-container1').removeClass("animated rollOut")
-        changeImage(2)
-$('#three-container1').removeClass("hello")
+        $('#three-container1').empty()
+        $('#three-container1').css('display','none')
+        setTimeout(function(){showImage(2)},2400)
 
-                $('#three-container1').addClass("hello")
-        // $('#three-container1').addClass("animated rollIn")
-        // $('#three-container1').removeClass("animated rollIn")
     }
    }
   function arrangeCurrentPage() {
