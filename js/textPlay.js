@@ -59,8 +59,10 @@
     }
     arrangeCurrentPage();
     scrambleOthers();
-    showImageForPage(currentPage)
-
+    $('#cf').removeClass('animated fadeInRight')
+    $('#cf').addClass('animated fadeOutRight')
+    setTimeout(animateContainer,1000);
+    setTimeout(function(){showImageForPage(currentPage)},1000);
   });
   $("#soup-next").click(function() {
     $("#soup-prev").show();
@@ -70,38 +72,64 @@
     }
     arrangeCurrentPage();
     scrambleOthers();
-    showImageForPage(currentPage)
+    $('#cf').removeClass('animated fadeInRight')
+    $('#cf').addClass('animated fadeOutRight')
+    setTimeout(animateContainer,1000);
+    setTimeout(function(){showImageForPage(currentPage)},1000);
+    
   });
   /*
    * Functions
    */
-   function showImage(number){
-            changeImage(number);
-               $('#three-container1').css('display','inline')
-
-              $('#three-container1 > canvas').removeClass('animated fadeInDown')
-              $('#three-container1 > canvas').addClass('animated fadeInDown')
-
+   function animateContainer(){
+          $('#cf').removeClass('animated fadeOutRight')
+      $('#cf').addClass('animated fadeInRight ')
    }
    function showImageForPage(pageNumber){
     if (pageNumber == 0){
 
-        $('#three-container1').empty()
-        $('#three-container1').css('display','none')
-        setTimeout(function(){showImage(0)},2400)
+      $('#workImage1').attr('src','img/spacegame.jpg')  
+      $('#workImage1').removeClass('largerWidthThanParentDiv')
+      $('#workImage1').removeClass('smallerWidthThanParentDiv')
+      $('#workImage1').addClass('smallerWidthThanParentDiv')
+
+
+      $('#workImage2').attr('src','img/spacegame2.jpg')  
+      $('#workImage2').removeClass('largerWidthThanParentDiv')
+      $('#workImage2').removeClass('smallerWidthThanParentDiv')
+      $('#workImage2').addClass('smallerWidthThanParentDiv')
+      $('#workImage2').css('left','') 
 
     }
     else if(pageNumber == 1){
 
-        $('#three-container1').empty()
-        $('#three-container1').css('display','none')
-        setTimeout(function(){showImage(1)},2400)
+      $('#workImage1').attr('src','img/sap1.jpg')
+      $('#workImage1').removeClass('largerWidthThanParentDiv')
+      $('#workImage1').removeClass('smallerWidthThanParentDiv')
+      $('#workImage1').addClass('largerWidthThanParentDiv')
+
+      $('#workImage2').attr('src','img/sap2.png') 
+      $('#workImage2').css('left','19.31%') 
+      $('#workImage2').removeClass('largerWidthThanParentDiv')
+      $('#workImage2').removeClass('smallerWidthThanParentDiv')
+      $('#workImage2').addClass('smallerWidthThanParentDiv')
+
+
+
+        
     }
     else if(pageNumber == 2){
  
-        $('#three-container1').empty()
-        $('#three-container1').css('display','none')
-        setTimeout(function(){showImage(2)},2400)
+      $('#workImage1').attr('src','img/iris1.jpg')
+      $('#workImage1').removeClass('largerWidthThanParentDiv')
+      $('#workImage1').removeClass('smallerWidthThanParentDiv')
+      $('#workImage1').addClass('largerWidthThanParentDiv')
+
+      $('#workImage2').attr('src','img/iris2.png')
+      $('#workImage2').css('left','') 
+      $('#workImage2').removeClass('largerWidthThanParentDiv')
+      $('#workImage2').removeClass('smallerWidthThanParentDiv')
+      $('#workImage2').addClass('largerWidthThanParentDiv') 
 
     }
    }
