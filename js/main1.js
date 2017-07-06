@@ -1,5 +1,12 @@
 jQuery(document).ready(function($){
 
+	function animateSoup(){
+		scrambleOthers();
+		setTimeout(animateSoup,2500);
+	}
+
+	animateSoup();
+
 	$('#myPic').css('border-radius','51%')
 	$('#uscDiv').css('display','none');
 	$('#bmsitDiv').css('display','none');
