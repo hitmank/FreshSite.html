@@ -1,4 +1,6 @@
+
 jQuery(document).ready(function($){
+
 
 	function animateSoup(){
 		scrambleOthers();
@@ -13,7 +15,7 @@ jQuery(document).ready(function($){
 	$('#bcbsDiv').css('display','none');
 	
 	$('#scrollAnimationDiv').css('display','none');
-
+	
 	function uscImageAnimation() {   
 		$('#haha').animate({
   		 left: '+=0px'}, 

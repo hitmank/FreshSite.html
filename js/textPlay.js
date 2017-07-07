@@ -223,7 +223,5 @@
 
   }
 
-$( "#jaja" ).mousestop(function( event ) {
-  scrambleOthers()
-});
+
 
