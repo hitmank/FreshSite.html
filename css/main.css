@@ -80,8 +80,18 @@ body {
 }
 
 
+#myface {
+  height: 55%;
+  width: auto;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
 
-
+#myfaceWrapper {
+  position: relative;
+  height: 100%;
+}
 
 
 

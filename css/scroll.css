@@ -53,13 +53,8 @@
 	top: 29%;
 	}
 }
- .scroll-btn {
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	text-align: center;
-}
+
+
 .scroll-btn > * {
 	display: inline-block;
 	line-height: 18px;

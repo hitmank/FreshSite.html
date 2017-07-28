@@ -209,8 +209,106 @@ animation-direction: alternate;
 
 
 
+#myfaceWrapper {
+  position: relative;
+  height: 100%;
+}
 
+@media screen and (min-width: 850px) and (min-height: 400px){
+  #firstPageText{
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    font-size: 3vw;
+    font-family: 'Dosis', sans-serif;
+        color: darkred;
+    text-align: left;
 
+  }
+  #myface {
+  height: 55%;
+  width: auto;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+ .scroll-btn {
+  position: absolute;
+  left: 48%;
+  bottom:7%;
+  text-align: center;
+}
 
+}
+@media screen and (max-width: 849px) and (min-height: 400px) {
+  #firstPageText{
+    font-size: 4.5vw;
+    position: absolute;
+    left: 18%;
+    top: 48%;
+    line-height: 30px;
+    font-family: 'Dosis', sans-serif;
+        color: darkred;
+    text-align: center;
 
+  }
+  #myface{
+    height: 45%;
+    padding-top: 5%;
+  }
+   .scroll-btn {
+  position: absolute;
+  left: 45%;
+  bottom:24%;
+  text-align: center;
+}
+}
+@media screen and (max-height: 399px){
+#myface{
+  height: 60%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+#firstPageText{font-size: 2.5vw;
+    position: absolute;
+    left: 30%;
+    top: 18%;
+  font-family: 'Dosis', sans-serif;
+      color: darkred;
+    text-align: left;
+}
+.scroll-btn {
+    position: absolute;
+    bottom: 14%;
+    left: 35%;
+  }
+}
+.logos{
+  position: absolute;
+  bottom: 66px;
+  width: auto;
+  height: 14%;
+}
+    
+#uscLogo{
+  right:223px;
+}
+#bmsitLogo{
+  right: 114px;
+}
+#bcbsLogo{
+  right:23px;
+}
+    
+#videoFirstPage{
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
 
