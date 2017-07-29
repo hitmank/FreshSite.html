@@ -240,7 +240,35 @@ animation-direction: alternate;
 }
 
 }
-@media screen and (max-width: 849px) and (min-height: 400px) {
+@media screen and (max-width: 414px) and (min-height: 400px) {
+  #firstPageText{
+    font-size: 5.5vw;
+    position: absolute;
+    left: 12%;
+    top: 53%;
+    line-height: 30px;
+    font-family: 'Dosis', sans-serif;
+    color: darkred;
+    text-align: center;
+  }
+  #myface{
+    height: 47%;
+    padding-top: 5%;
+  }
+  .scroll-btn {
+        position: absolute;
+    left: 7%;
+    bottom: 45%;
+    text-align: center;
+  }
+  #uscLogo{
+  right:262px;
+}
+#bmsitLogo{
+  right: 134px;
+}
+}
+@media screen and (min-width: 415px) and (max-width: 849px) and (min-height: 400px) {
   #firstPageText{
     font-size: 4.5vw;
     position: absolute;
