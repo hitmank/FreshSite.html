@@ -238,6 +238,16 @@ animation-direction: alternate;
   bottom:7%;
   text-align: center;
 }
+#soupy{
+  float:left;width:50%;height:100%;font-family:coolio;
+}
+#imagey{float:right;width:50%;height:100%;
+  background-image:linear-gradient(
+      to right, 
+      orange, darkred
+    );
+}
+#lalaDic{width:90%;height:70%;margin: 0 auto;position:relative;top:20%;}
 
 }
 @media screen and (max-width: 414px) and (min-height: 400px) {
@@ -267,6 +277,28 @@ animation-direction: alternate;
 #bmsitLogo{
   right: 134px;
 }
+#imagey{
+      width: 50%;
+    height: 31%;
+    margin: 0 auto;
+    padding-top: 4%;
+}
+#lalaDic{
+      width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+#soupy{
+      width: 100%;
+    height: 100%;
+    font-family: coolio;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
 }
 @media screen and (min-width: 415px) and (max-width: 849px) and (min-height: 400px) {
   #firstPageText{
@@ -289,6 +321,28 @@ animation-direction: alternate;
   left: 45%;
   bottom:24%;
   text-align: center;
+}
+#imagey{
+      width: 50%;
+    height: 31%;
+    margin: 0 auto;
+    padding-top: 4%;
+}
+#lalaDic{
+      width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+#soupy{
+      width: 100%;
+    height: 100%;
+    font-family: coolio;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
 }
 }
 @media screen and (max-height: 399px){

@@ -20,13 +20,7 @@ background-image:
   src: url('../fonts/Cormorant-Bold.ttf');
    } 
 
-#imagey{
-  background-image:
-    linear-gradient(
-      to right, 
-      orange, darkred
-    );
-}
+
 .soup-title {
   font-size: 45px;
 }
