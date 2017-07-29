@@ -75,7 +75,7 @@ Main Components
 }
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
-  content: 'Effects not visible on mobile!';
+ /* content: 'Effects not visible on mobile!';
   position: absolute;
   width: 100%;
   text-align: center;
@@ -84,7 +84,7 @@ Main Components
   font-weight: bold;
   font-size: 1.3rem;
   text-transform: uppercase;
-  color: #6a7083;
+  color: #6a7083;*/
 }
 .cd-section:nth-of-type(2) > div {
   background-color: #2e5367;
