@@ -3,8 +3,13 @@
    * Main variables
    */
 setTimeout(animateLogos,1000);
+setTimeout(animateMenuArrow,1500);
 function animateLogos(){
   $('#scrollIndicator').addClass('animated shake')
+
+}
+function animateMenuArrow(){
+  $('.meny-arrow').addClass('animated flipInY')
 
 }
 //

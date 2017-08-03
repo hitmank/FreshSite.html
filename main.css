@@ -1,3 +1,46 @@
+.meny-arrow {
+  position: absolute;
+  z-index: 10;
+
+  border: 10px solid transparent;
+
+  -webkit-transition: opacity 0.4s ease 0.4s;
+     -moz-transition: opacity 0.4s ease 0.4s;
+      -ms-transition: opacity 0.4s ease 0.4s;
+       -o-transition: opacity 0.4s ease 0.4s;
+          transition: opacity 0.4s ease 0.4s;
+}
+  .meny-arrow {
+    left: 6px;
+    top: 50%;
+    margin-top: -16px;
+    border-left: 16px solid #333;
+    animation: colorchange 10s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 10s; /* Chrome and Safari */
+  }
+
+
+    
+
+    @keyframes colorchange
+    {
+      0%   {border-left: 16px solid black;}
+      25%  {border-left: 16px solid gray;}
+      50%  {border-left: 16px solid white;}
+      75%  {border-left: 16px solid gray;}
+      100% {border-left: 16px solid black;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {border-left: 16px solid black;}
+      25%  {border-left: 16px solid gray;}
+      50%  {border-left: 16px solid white;}
+      75%  {border-left: 16px solid gray;}
+      100% {border-left: 16px solid black;}
+    }
+
 .menuItemDiv{
     height: 7%;
     top: 3%;
