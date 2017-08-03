@@ -18,7 +18,10 @@
 
 
 
-
+ function moveToPage(page_number){
+    windowContext = $(this);
+    windowContext.moveTo(page_number);
+  }
 var shouldAnimateAlphabetSoup = false;
 
 !function($){
@@ -451,6 +454,7 @@ var shouldAnimateAlphabetSoup = false;
     }
     return false;
   }
+
 animateSoup()
  function animateSoup(){
     if (shouldAnimateAlphabetSoup) {
@@ -459,5 +463,7 @@ animateSoup()
     setTimeout(animateSoup,2500);
 
   }
+ 
+ 
 
 }(window.jQuery);

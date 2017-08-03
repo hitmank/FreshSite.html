@@ -334,6 +334,21 @@ var meny = Meny.create({
 
 
   }
+   $('#backToTop').click(function(){
+    moveToPage(1);
+  });
+   $('#menuItem1').click(function(){
+    moveToPage(1);
+  });
+  $('#menuItem2').click(function(){
+    moveToPage(2);
+  });
+  $('#menuItem3').click(function(){
+    moveToPage(3);
+  });
+  $('#menuItem4').click(function(){
+    moveToPage(4);
+  });
 
 
 

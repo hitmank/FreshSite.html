@@ -1,3 +1,28 @@
+.menuItemDiv{
+    height: 7%;
+    top: 3%;
+    position: relative;
+}
+.menuItemP{
+  margin: 0;
+  font-size: 20pt;
+}
+.menuItemDiv:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+
+@font-face { 
+   font-family: scottFont; 
+   src: url('scott.ttf');
+       
+ } 
+p{
+  font-family: scottFont;
+}
+
+
 #alphabetSoupContainer > div {
   padding-top: 3%;
 }   
