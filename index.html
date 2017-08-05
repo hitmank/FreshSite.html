@@ -22,7 +22,9 @@
 <link href='rain.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <script type="text/javascript" src="meny.js"></script>
-
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="hTimeline.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="hTimelineReset.css"> <!-- Resource style -->
   <!-- Include jQuery.mmenu .css files -->
 
   <style>
@@ -51,21 +53,6 @@
       float: left;
       width: 100%;
       margin: 0 auto;
-    }
-    
-    
-    .credit {
-      text-align: center;
-      color: rgba(0,0,0,0.5);
-      padding: 10px;
-      width: 410px;
-      clear: both;
-    }
-    .credit a {
-      color: rgba(0,0,0,0.85);
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
     }
     
     .back {
@@ -179,21 +166,7 @@
       height: 86%;
       top: 7%;
     }
-    .main section.page3 h1 {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 0;
-      font-size: 70px;
-      letter-spacing: -1px;
-      color: black;
-    }
-    .main section.page3 h2 {
-      color: rgba(0,0,0,0.85);
-      text-align: left;
-      line-height: 160%;
-      font-weight: 100;
-      font-size: 21px;
-    }
+    
     
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
@@ -318,6 +291,7 @@
       </section>
 	    
 	    <section class="page2">
+
 	      <div class="page_container">
             
 
@@ -353,18 +327,48 @@
 	      </div>
       </section>
 	    
-	    <section class="page3">
+	    <section class="page3 c">
+        <div id="timelineOverlay" style="display:none"></div>
 	      <div class="page_container">
-               <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11zAyY8te3BNHWL2PEOJPfL90PxN2gJB4G8JHkxgBD7I&font=Default&lang=en&initial_zoom=2' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+              <!--  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11zAyY8te3BNHWL2PEOJPfL90PxN2gJB4G8JHkxgBD7I&font=Default&lang=en&initial_zoom=2' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
+              <!-- <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11zAyY8te3BNHWL2PEOJPfL90PxN2gJB4G8JHkxgBD7I&font=Default&lang=en&start_at_end=true&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
+              <!-- 1 -->
+      <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+      <!-- 2 -->
+      <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+      <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+      <!-- 3 -->
+      <script type="text/javascript">
+        var additionalOptions = {
+              start_at_end: true
+            }
+
+        // The TL.Timeline constructor takes at least two arguments:
+        // the id of the Timeline container (no '#'), and
+        // the URL to your JSON data file or Google spreadsheet.
+        // the id must refer to an element "above" this code,
+        // and the element must have CSS styling to give it width and height
+        // optionally, a third argument with configuration options can be passed.
+        // See below for more about options.
+        timeline = new TL.Timeline('timeline-embed',
+          'https://docs.google.com/spreadsheets/d/11zAyY8te3BNHWL2PEOJPfL90PxN2gJB4G8JHkxgBD7I/edit#gid=0',additionalOptions);
+      </script>
 
   	    </div>
+
       </section>
     </div>
     <a id="backToTop"class="back" href="#">Back to the top</a>
-    <a href="https://github.com/hitmank/hitmank.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Link to my GItHub"></a>
+    <a id = "bannerLink" href="https://github.com/hitmank/hitmank.github.io"><img id ="bannerImage"style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Link to my GItHub"></a>
   </div>
 </div>
 </body>
   <script type="text/javascript" src="textPlay.js"></script>
+<script src="jquery.mobile.custom.min.js"></script>
+<script src="hTimeline.js"></script> <!-- Resource jQuery -->
+  <link rel="stylesheet" href="customTimeline.css"> <!-- Resource style -->
 
 </html>

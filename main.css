@@ -1,3 +1,17 @@
+
+
+.bannerLinkPage3{
+  display: none;
+}
+
+#timelineOverlay{
+  position: absolute;
+  width: 78%;
+  height: 86%;
+  top: 7%;
+  z-index: 10;
+  left: 11%;
+}
 .meny{
   color: bisque;
   background-color: darkgrey;
@@ -210,6 +224,14 @@ p{
 
 }
 @media screen and (max-width: 569px) and (min-height: 400px) {
+  #timelineOverlay {
+    position: absolute;
+    width: 70%;
+    height: 86%;
+    top: 7%;
+    z-index: 10;
+    left: 15%;
+}
   #firstPageText{
     font-size: 5.5vw;
     position: absolute;
@@ -285,6 +307,14 @@ p{
  }
 }
 @media screen and (min-width: 570px) and (max-width: 799px) and (min-height: 400px) {
+  #timelineOverlay {
+    position: absolute;
+    width: 74%;
+    height: 86%;
+    top: 7%;
+    z-index: 10;
+    left: 13%;
+}
   #bmsitLogo {
     right: 158px;
   }

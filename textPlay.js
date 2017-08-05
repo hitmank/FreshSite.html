@@ -173,6 +173,18 @@ var meny = Meny.create({
       $('#workImage2').removeClass('iris2')
       $('#workImage2').addClass('ios2')
 
+
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage4');
+      $('#bannerImage').removeClass('bannerImagePage1');
+      $('#bannerImage').removeClass('bannerImagePage2');
+      $('#bannerImage').removeClass('bannerImagePage3');
+      $('#bannerImage').removeClass('bannerImagePage4');
+
+      $('#bannerLink').addClass('bannerLinkPage1');
+      $('#bannerImage').addClass('bannerImagePage1');
     }
     else if(pageNumber == 1){
 
@@ -211,7 +223,17 @@ var meny = Meny.create({
       $('#workImage2').removeClass('iris2')
       $('#workImage2').addClass('sap2')
 
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage4');
+      $('#bannerImage').removeClass('bannerImagePage1');
+      $('#bannerImage').removeClass('bannerImagePage2');
+      $('#bannerImage').removeClass('bannerImagePage3');
+      $('#bannerImage').removeClass('bannerImagePage4');
 
+      $('#bannerLink').addClass('bannerLinkPage2');
+      $('#bannerImage').addClass('bannerImagePage2');
 
         
     }
@@ -248,6 +270,17 @@ var meny = Meny.create({
       $('#workImage2').removeClass('iris2')
       $('#workImage2').addClass('iris2')
 
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage4');
+      $('#bannerImage').removeClass('bannerImagePage1');
+      $('#bannerImage').removeClass('bannerImagePage2');
+      $('#bannerImage').removeClass('bannerImagePage3');
+      $('#bannerImage').removeClass('bannerImagePage4');
+
+      $('#bannerLink').addClass('bannerLinkPage3');
+      $('#bannerImage').addClass('bannerImagePage3');
     }
    }
   function arrangeCurrentPage() {

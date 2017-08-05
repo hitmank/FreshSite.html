@@ -23,7 +23,7 @@
     windowContext.moveTo(page_number);
   }
 var shouldAnimateAlphabetSoup = false;
-
+var firstTimeGoingtoPage3 = true;
 !function($){
 
   var defaults = {
@@ -135,12 +135,7 @@ var shouldAnimateAlphabetSoup = false;
     $.fn.moveDown = function() {
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
-      if (index == 1) {
-        shouldAnimateAlphabetSoup = true
-      } 
-      else{
-        shouldAnimateAlphabetSoup = false
-      }
+     
       current = $(settings.sectionContainer + "[data-index='" + index + "']");
       next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
       if(next.length < 1) {
@@ -154,6 +149,66 @@ var shouldAnimateAlphabetSoup = false;
       }else {
         pos = (index * 100) * -1;
       }
+       if (index == 0) {
+        shouldAnimateAlphabetSoup = false;
+
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage1');
+        $('#bannerImage').addClass('bannerImagePage1');
+      }
+      else if (index == 1){
+        shouldAnimateAlphabetSoup = true;
+        animateSoup()
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage2');
+        $('#bannerImage').addClass('bannerImagePage2');
+
+      }
+      else if (index == 2){
+        shouldAnimateAlphabetSoup = false;
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage3');
+        $('#bannerImage').addClass('bannerImagePage3');
+      }
+      else if(index == 3){
+        shouldAnimateAlphabetSoup = false;
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage4');
+        $('#bannerImage').addClass('bannerImagePage4');
+      }
+      
       if (typeof settings.beforeMove == 'function') settings.beforeMove( next.data("index"));
       current.removeClass("active")
       next.addClass("active");
@@ -175,12 +230,7 @@ var shouldAnimateAlphabetSoup = false;
     $.fn.moveUp = function() {
       var el = $(this)
       index = $(settings.sectionContainer +".active").data("index");
-       if (index == 1) {
-        shouldAnimateAlphabetSoup = true
-      }
-      else{
-        shouldAnimateAlphabetSoup = false
-      }
+   
       current = $(settings.sectionContainer + "[data-index='" + index + "']");
       next = $(settings.sectionContainer + "[data-index='" + (index - 1) + "']");
 
@@ -194,6 +244,65 @@ var shouldAnimateAlphabetSoup = false;
         }
       }else {
         pos = ((next.data("index") - 1) * 100) * -1;
+      }
+        if (index == 0) {
+        shouldAnimateAlphabetSoup = false;
+
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage1');
+        $('#bannerImage').addClass('bannerImagePage1');
+      }
+      else if (index == 1){
+        shouldAnimateAlphabetSoup = true;
+        animateSoup()
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage2');
+        $('#bannerImage').addClass('bannerImagePage2');
+
+      }
+      else if (index == 2){
+        shouldAnimateAlphabetSoup = false;
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage3');
+        $('#bannerImage').addClass('bannerImagePage3');
+      }
+      else if(index == 3){
+        shouldAnimateAlphabetSoup = false;
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage4');
+        $('#bannerImage').addClass('bannerImagePage4');
       }
       if (typeof settings.beforeMove == 'function') settings.beforeMove(next.data("index"));
       current.removeClass("active")
@@ -213,17 +322,68 @@ var shouldAnimateAlphabetSoup = false;
     }
 
     $.fn.moveTo = function(page_index) {
-      if (page_index == 2) {
+      
 
-        shouldAnimateAlphabetSoup = true;
-        animateSoup()
-
-
-      }
-      else{
+      if (page_index == 1) {
         shouldAnimateAlphabetSoup = false;
 
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage1');
+        $('#bannerImage').addClass('bannerImagePage1');
       }
+      else if (page_index == 2){
+        shouldAnimateAlphabetSoup = true;
+        animateSoup()
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage2');
+        $('#bannerImage').addClass('bannerImagePage2');
+
+      }
+      else if (page_index == 3){
+        shouldAnimateAlphabetSoup = false;
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage3');
+        $('#bannerImage').addClass('bannerImagePage3');
+      }
+      else if(page_index == 4){
+        shouldAnimateAlphabetSoup = false;
+        $('#bannerLink').removeClass('bannerLinkPage1');
+        $('#bannerLink').removeClass('bannerLinkPage2');
+        $('#bannerLink').removeClass('bannerLinkPage3');
+        $('#bannerLink').removeClass('bannerLinkPage4');
+        $('#bannerImage').removeClass('bannerImagePage1');
+        $('#bannerImage').removeClass('bannerImagePage2');
+        $('#bannerImage').removeClass('bannerImagePage3');
+        $('#bannerImage').removeClass('bannerImagePage4');
+
+        $('#bannerLink').addClass('bannerLinkPage4');
+        $('#bannerImage').addClass('bannerImagePage4');
+      }
+      
       current = $(settings.sectionContainer + ".active")
       next = $(settings.sectionContainer + "[data-index='" + (page_index) + "']");
       if(next.length > 0) {
@@ -463,7 +623,6 @@ animateSoup()
     setTimeout(animateSoup,2500);
 
   }
- 
  
 
 }(window.jQuery);
