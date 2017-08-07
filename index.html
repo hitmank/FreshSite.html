@@ -26,13 +26,17 @@
 <link rel="stylesheet" href="hTimeline.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="hTimelineReset.css"> <!-- Resource style -->
   <!-- Include jQuery.mmenu .css files -->
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     html {
       height: 100%;
     }
     body {
-      background: #E2E4E7;
+      background-image: url(img/2.png);
       padding: 0;
       text-align: center;
       font-family: 'open sans';
@@ -217,6 +221,9 @@
 	</style>
   
 	<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();      
+});
 	  $(document).ready(function(){
       $(".main").onepage_scroll({
         sectionContainer: "section",
@@ -273,10 +280,10 @@
              <img class = "logos animated slideInUp" id ="uscLogo" src="img/usc.jpg"> 
              <img class = "logos animated slideInUp" id ="bmsitLogo"src="img/bmsit.png"> 
              <img class = "logos animated slideInUp" id ="bcbsLogo"src="img/bcbs.png">     
-            <!--  <video id="videoFirstPage"autoplay loop class="fillWidth" >
+              <video id="videoFirstPage"autoplay loop class="fillWidth" >
                       ds       <source src="MP4/test1.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                             <source src="WEBM/test1.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-             </video>  -->  
+             </video>  
              <span id="scrollIndicator"class="scroll-btn">
                <a href="#">
                   <span class="mouse">
@@ -327,7 +334,7 @@
 	      </div>
       </section>
 	    
-	    <section class="page3 c">
+	    <section class="page3">
         <div id="timelineOverlay" style="display:none"></div>
 	      <div class="page_container">
               <!--  <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=11zAyY8te3BNHWL2PEOJPfL90PxN2gJB4G8JHkxgBD7I&font=Default&lang=en&initial_zoom=2' width='100%' height='100%' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
@@ -360,6 +367,24 @@
   	    </div>
 
       </section>
+      <section class="page4">
+        <div class="page_container" style="background-image: url('img/img3.jpg');">
+          <p id="contactP1" style="font-family:Pacifico, cursive;">I am availiable for freelance work</p>
+          <p id="contactP2" style="font-family:Pacifico, cursive;font-size:x-large">Here are a few ways to contact me!</p>
+          <p id="contactP3">Call me at : +1(213)425-6556</p>
+          <div id = "iconContainer">
+            
+            <a title="LinkedIn" style="margin-left: 10px;"data-toggle="tooltip" data-placement="bottom"  href="https://www.linkedin.com/in/karan-balakrishnan-5b155582/"><img src="img/Li.png" style="vertical-align:top"></a>
+            <a title="Facebook" style="margin-left: 2px;"data-toggle="tooltip" data-placement="bottom"  href="https://www.facebook.com/karan.b7"><img src="img/fb.png" style="vertical-align:top;width:64px;"></a>
+            <a title="Github" style="margin-left: 14px;"data-toggle="tooltip" data-placement="bottom"  href="https://github.com/hitmank/"><img id="gitImg"src="img/b.png" style="vertical-align:top;margin-left:7px"></a>
+            <a title="Email" style="margin-left: 7px;"data-toggle="tooltip" data-placement="bottom"  href="mailto:karan.b755@gmail.com?Subject=Hello"><i class="material-icons customIconStyle">email</i></a>
+            <a id="iosIcon" title="iOS" data-toggle="tooltip" data-placement="bottom"  href="www.facebook.com"><img src="img/xcode.png" style="vertical-align:top;width:77px;"></a>
+          </div>
+          <div id = "mapContainer">
+            <iframe src="https://snazzymaps.com/embed/8241" width="100%" height="100%" style="border:none;"></iframe>
+          </div>
+        </div>
+      </section>    
     </div>
     <a id="backToTop"class="back" href="#">Back to the top</a>
     <a id = "bannerLink" href="https://github.com/hitmank/hitmank.github.io"><img id ="bannerImage"style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Link to my GItHub"></a>

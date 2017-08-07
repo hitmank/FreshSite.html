@@ -1,4 +1,61 @@
+#iosIcon{
+  vertical-align: top;
+  width: 81px;
+  margin-left: 10px;
+  line-height: 2.1;
+  position: absolute;
+  top: -12%;
+  left: 100%;"
+}
 
+
+#gitImg{
+  content:url(img/b.png);
+}
+
+#contactP1{
+  position: absolute;
+  top: 9%;
+  left:34%;
+  font-size: xx-large;
+}
+#contactP3{
+      position: absolute;
+    top: 29%;
+    left: 38.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+
+
+
+}
+#contactP2 {
+    position: absolute;
+    top: 20%;
+    left: 37.5%;
+        color: sienna;
+}
+
+.material-icons.customIconStyle{
+  font-size: 94px;
+      color: seagreen;
+      margin-left: 8px;
+      line-height: 0.7;
+}
+#iconContainer{
+        position: absolute;
+    top: 41%;
+    left: 35%;
+}
+#mapContainer{
+    width: 65%;
+    margin: 0 auto;
+    height: 40%;
+    position: absolute;
+    bottom: 1%;
+    left: 16%;
+  }
 
 .bannerLinkPage3{
   display: none;
@@ -101,10 +158,8 @@ p{
 }
     
 #videoFirstPage{
-  min-height: 100%;
-  min-width: 100%;
-  height: auto;
-  width: auto;
+ 
+ 
   position: absolute;
   top: 0px;
   left: 0px;
@@ -156,6 +211,41 @@ p{
 
 }*/
 @media screen and (min-width: 800px) and (max-width: 1225px) and (min-height: 400px){
+  #contactP1 {
+    position: absolute;
+    top: 9%;
+    left: 30%;
+}
+#gitImg{
+  content:url(img/c.png);
+}
+#contactP2 {
+    position: absolute;
+    top: 20%;
+    left: 34.5%;
+    color: sienna;
+}
+#contactP3 {
+    position: absolute;
+    top: 29%;
+    left: 36.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+}
+#iconContainer {
+    position: absolute;
+    top: 41%;
+    left: 30%;
+}
+
+  #videoFirstPage {
+   
+    position: absolute;
+    top: 0px;
+    left: -56%;
+    z-index: -1;
+}
   #uscLogo {
     right: 286px;
   }
@@ -224,6 +314,49 @@ p{
 
 }
 @media screen and (max-width: 569px) and (min-height: 400px) {
+  #iosIcon{
+    vertical-align: top;
+    width: 81px;
+    margin-left: 10px;
+    line-height: 2.1;
+    position: absolute;
+    top: 79%;
+    left: 36%;
+}
+#iconContainer {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+}
+
+  #contactP3 {
+    position: absolute;
+    top: 29%;
+    left: 9.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+}
+#contactP2 {
+    position: absolute;
+    top: 20%;
+    left: 5.5%;
+    color: sienna;
+}
+#contactP1 {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+    font-size: x-large;
+}
+
+  #videoFirstPage {
+
+    position: absolute;
+    top: 0px;
+    left: -169%;
+    z-index: -1;
+}
   #timelineOverlay {
     position: absolute;
     width: 70%;
@@ -307,7 +440,38 @@ p{
  }
 }
 @media screen and (min-width: 570px) and (max-width: 799px) and (min-height: 400px) {
-  #timelineOverlay {
+  #contactP1 {
+    position: absolute;
+    top: 9%;
+    left: 21%;
+}
+#contactP2 {
+    position: absolute;
+    top: 20%;
+    left: 25.5%;
+    color: sienna;
+}
+#contactP3 {
+    position: absolute;
+    top: 29%;
+    left: 28.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+}
+#iconContainer {
+    position: absolute;
+    top: 41%;
+    left: 20%;
+}
+  #videoFirstPage {
+  
+    position: absolute;
+    top: 0px;
+    left: -128%;
+    z-index: -1;
+}
+#timelineOverlay {
     position: absolute;
     width: 74%;
     height: 86%;
@@ -684,6 +848,14 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  #mapContainer{
+    width: 65%;
+    margin: 0 auto;
+    height: 40%;
+    position: absolute;
+    bottom: 1%;
+    left: 16%;
+  }
   .logos {
     position: absolute;
     bottom: 47px;
@@ -820,7 +992,39 @@ only screen and (min-device-pixel-ratio : 1.5) {
   and (max-device-width: 667px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2)
-{   
+{   #iconContainer {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+#contactP1 {
+    position: absolute;
+    top: 9%;
+    left: 25%;
+    font-size: x-large;
+}
+#mapContainer {
+    width: 46%;
+    margin: 0 auto;
+    height: 37%;
+    position: absolute;
+    bottom: 1%;
+    left: 27%;
+}
+#contactP3 {
+    position: absolute;
+    top: 28%;
+    left: 27.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+}
+#contactP2 {
+    position: absolute;
+    top: 18%;
+    left: 24.5%;
+    color: sienna;
+}
     .logos {
     position: absolute;
     bottom: 47px;
@@ -945,7 +1149,31 @@ only screen and (min-device-pixel-ratio : 1.5) {
   and (max-device-width: 667px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2)
-{  
+{  #iconContainer {
+    position: absolute;
+    top: 34%;
+    left: 3%;
+}
+#contactP1 {
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    font-size: x-large;
+}
+#contactP2 {
+    position: absolute;
+    top: 17%;
+    left: 4.5%;
+    color: sienna;
+}
+#contactP3 {
+    position: absolute;
+    top: 26%;
+    left: 9.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+}
   .logos {
     position: absolute;
     bottom: 47px;
@@ -1010,6 +1238,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     width: 100%;
     left: 0%;
     top: 25%;
+    }
+    .bannerImagePage4{
+      z-index: -1;
     }
 }
 
@@ -1144,7 +1375,39 @@ only screen and (min-device-pixel-ratio : 1.5) {
   and (max-device-width: 736px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 3)
-{ 
+{ #mapContainer {
+    width: 65%;
+    margin: 0 auto;
+    height: 40%;
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+}
+#iconContainer {
+    position: absolute;
+    top: 34%;
+    left: 7%;
+}
+#contactP3 {
+    position: absolute;
+    top: 23%;
+    left: 9.5%;
+    font-family: Pacifico;
+    font-size: x-large;
+    color: darkgreen;
+}
+#contactP2 {
+    position: absolute;
+    top: 15%;
+    left: 6.5%;
+    color: sienna;
+}
+#contactP1 {
+    position: absolute;
+    top: 7%;
+    left: 9%;
+    font-size: x-large;
+}
   .logos {
     position: absolute;
     bottom: 47px;
