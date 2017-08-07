@@ -50,5 +50,5 @@
 	width: 100%;
 }
 .tl-slide .tl-slide-content-container .tl-slide-content {
-	width: 100%;
+	width: 100% !important;
 }
