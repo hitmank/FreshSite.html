@@ -280,10 +280,11 @@ p{
     float:left;width:50%;height:100%;font-family:coolio;
   }
   #imageContainer{float:right;width:50%;height:100%;
-    background-image:linear-gradient(
+   /* background-image:linear-gradient(
         to right, 
         orange, darkred
-      );
+      );*/
+background-image: url(img/11.png);
   }
   #imageInnerContainer{width:90%;height:70%;margin: 0 auto;position:relative;top:20%;}
    .ios1{
@@ -898,10 +899,11 @@ and (min-width : 1224px) {
   }
   #imageContainer{
     float:right;width:50%;height:100%;
-    background-image:linear-gradient(
+    /*background-image:linear-gradient(
       to right, 
       orange, darkred
-    );
+    );*/
+background-image: url(img/11.png);
   }
 
   #imageInnerContainer{
@@ -1070,10 +1072,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
       margin: 0 auto;
       padding-top: 4%;
       float:right;
-      background-image:linear-gradient(
+      /*background-image:linear-gradient(
       to right, 
       orange, darkred
-    );
+    );*/
+background-image: url(img/11.png);
       }
      #imageInnerContainer{
         width: 100%;
@@ -1296,10 +1299,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
       margin: 0 auto;
       padding-top: 4%;
       float:right;
-      background-image:linear-gradient(
+      /*background-image:linear-gradient(
       to right, 
       orange, darkred
-    );
+    );*/
+background-image: url(img/11.png);
   }
   #imageInnerContainer{
         width: 100%;

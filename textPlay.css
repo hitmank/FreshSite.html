@@ -23,12 +23,12 @@
   font-size: 64px;
 }
 #alphabetSoupContainer{
-background-image:
+/*background-image:
     linear-gradient(
       to right, 
       white, orange
-    );
-
+    );*/
+background-image: url(img/11.png);
 }
 
  @font-face { 
