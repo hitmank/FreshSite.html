@@ -1,3 +1,11 @@
+#resumeLink{
+    position: absolute;
+    bottom: 25%;
+    left: 6%;
+    font-size: x-large;
+    text-decoration: overline;
+    font-family: cursive;
+}
 #iosIcon{
   vertical-align: top;
   width: 81px;
@@ -211,6 +219,11 @@ p{
 
 }*/
 @media screen and (min-width: 800px) and (max-width: 1225px) and (min-height: 400px){
+  #resumeLink{
+ 
+    left: 8%;
+    
+}
   #contactP1 {
     position: absolute;
     top: 9%;
@@ -315,6 +328,9 @@ background-image: url(img/11.png);
 
 }
 @media screen and (max-width: 569px) and (min-height: 400px) {
+  #resumeLink{    bottom: 28%;
+    left: 33%;
+    color: aliceblue;}
   #iosIcon{
     vertical-align: top;
     width: 81px;
@@ -441,6 +457,12 @@ background-image: url(img/11.png);
  }
 }
 @media screen and (min-width: 570px) and (max-width: 799px) and (min-height: 400px) {
+  #resumeLink{
+    bottom: 26%;
+    left: 40%;
+    color: aliceblue;
+  }
+
   #contactP1 {
     position: absolute;
     top: 9%;
@@ -704,6 +726,12 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
+  #resumeLink {
+    left: 9%;
+    bottom: 19%;
+    color: darkgreen;
+    font-size: xx-large;
+}
  .logos {
     position: absolute;
     bottom: 72px;
@@ -779,6 +807,17 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+
+  #resumeLink {
+    bottom: 19%;
+    left: 41%;
+    color: aliceblue;
+    font-size: xx-large;
+}
+  #uscLogo {
+    right: 546px;
+    bottom: 26px;
+}
     .logos {
     position: absolute;
     bottom: 95px;
@@ -786,14 +825,14 @@ and (orientation : portrait) {
     height: 14%;
 }
  #bcbsLogo {
-     right: 160px;
-  }
+    right: 27px;
+    bottom: 26px;
+}
   #bmsitLogo {
-    right: 414px;
-  }
-  #uscLogo {
-    right: 657px;
-  }
+    right: 302px;
+    bottom: 26px;
+}
+  
   #myface{
   height: 45%;
 
@@ -805,7 +844,7 @@ and (orientation : portrait) {
     left: 15%;
     top: 45%;
     font-family: 'Dosis', sans-serif;
-    color: darkred;
+    color: darkgray;
   }
   .scroll-btn {
     position: absolute;
@@ -994,7 +1033,18 @@ only screen and (min-device-pixel-ratio : 1.5) {
   and (max-device-width: 667px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2)
-{   #iconContainer {
+{   
+#resumeLink {
+    position: absolute;
+    bottom: 39%;
+    color: black;
+    left: 31%;
+    font-size: x-large;
+    text-decoration: overline;
+    font-family: cursive;
+}
+
+  #iconContainer {
     position: absolute;
     top: 40%;
     left: 15%;
@@ -1152,7 +1202,14 @@ background-image: url(img/11.png);
   and (max-device-width: 667px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2)
-{  #iconContainer {
+{  
+#resumeLink {
+    bottom: 41%;
+    left: 33%;
+    color: darkgreen;
+}
+
+  #iconContainer {
     position: absolute;
     top: 34%;
     left: 3%;
@@ -1253,7 +1310,11 @@ background-image: url(img/11.png);
   and (max-device-width: 736px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 3)
-{  
+{  #resumeLink {
+    bottom: 36%;
+    left: 32%;
+    color: aliceblue;
+}
   .logos {
     position: absolute;
     bottom: 47px;
