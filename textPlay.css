@@ -5,6 +5,8 @@
   bottom: 32px;
   z-index: 9002;
   font-size: 64px;
+    color: snow;
+
 }
 .page2nav {
   position: absolute;
@@ -13,6 +15,8 @@
   bottom: 32px;
   z-index: 9002;
   font-size: 64px;
+    color: snow;
+
 }
 .page3nav {
   position: absolute;
@@ -21,6 +25,7 @@
   bottom: 32px;
   z-index: 9002;
   font-size: 64px;
+  color: snow;
 }
 
 
