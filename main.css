@@ -1,3 +1,21 @@
+#descDiv{}
+#descP{
+
+    font-family: serif;
+    color: aliceblue;
+    font-size: 137%;
+
+}
+#descList{
+  text-align: left;
+  color: aliceblue;
+  font-size: 137%;
+}
+
+#myWorkHeader{    position: absolute;
+    left: 45.5%;
+    top: 2%;}
+
 #resumeLink{
     position: absolute;
     bottom: 25%;
@@ -224,6 +242,10 @@ p{
     left: 8%;
     
 }
+#descDiv {
+    position: absolute;
+    bottom: 2%;
+}
   #contactP1 {
     position: absolute;
     top: 9%;
@@ -297,37 +319,75 @@ p{
         to right, 
         orange, darkred
       );*/
-background-image: url(img/11.png);
+
   }
-  #imageInnerContainer{width:90%;height:70%;margin: 0 auto;position:relative;top:20%;}
+  #imageInnerContainer {
+    width: 90%;
+    height: 49%;
+    margin: 0 auto;
+    position: relative;
+    top: 4%;
+}
    .ios1{
-    left:28.064%;
-    width: 42%
+        left: 28.064%;
+    width: 43%;
+    top: 9%;
  }
  .ios2{
-    left:28.064%;
-    width: 42%
+        left: 28.064%;
+    width: 43%;
+    top: 9%;
  }
  .sap1{
-    left:16%;
-    width: 70%
+    left: 7%;
+    width: 82%;
+    top: 18%;
  }
  .sap2{
-    left: 22.064%;
+    left: 17.064%;
     width: initial;
-    height: 75%;
+    height: 90%;
+    top: 12%;
  }
  .iris1{
-     width: 75%;
-    left: 16%;
+  width: 85%;
+    left: 5%;
+    top: 31%;
  }
  .iris2{
-    width: 70%;
-    left: 15%;
+       width: 74%;
+    left: 12%;
+    top: 21%;
  }
 
 }
 @media screen and (max-width: 569px) and (min-height: 400px) {
+  #descList {
+    text-align: left;
+    color: aliceblue;
+    font-size: 99%;
+    padding-left: 19px;
+}
+  #descP {
+    font-family: serif;
+    color: aliceblue;
+    font-size: 104%;
+}
+  #descDiv {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0%;
+    top: 5%;
+}
+  #myWorkHeader {
+    position: absolute;
+    left: 13.5%;
+    top: 2%;
+}
+  .bannerLinkPage2{
+    display: none;
+  }
   #resumeLink{    bottom: 28%;
     left: 33%;
     color: aliceblue;}
@@ -414,47 +474,53 @@ background-image: url(img/11.png);
       margin: 0 auto;
       padding-top: 4%;
   }
-  #imageInnerContainer{
-        width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      position: relative;
-      top: 6%;
-  }
-  #alphabetSoupContainer{
-        width: 100%;
-      height: 100%;
-      font-family: coolio;
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      z-index: -1;
-  }
-  .ios1{
-    left: 26.064%;
+ #imageInnerContainer {
     width: 50%;
- }
- .ios2{
+    height: 40%;
+    position: absolute;
+    top: 6%;
+    LEFT: 0%;
+}
+  #alphabetSoupContainer {
+    width: 100%;
+    height: 95%;
+    font-family: coolio;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    z-index: -1;
+}
+  .ios1 {
     left: 26.064%;
-    width: 50%;
- }
- .sap1{
-    left:16%;
-    width: 70%
- }
- .sap2{
+    width: 68%;
+    top: 7%;
+}
+ .ios2 {
+    left: 26.064%;
+    width: 68%;
+    top: 7%;
+}
+ .sap1 {
+    left: 16%;
+    width: 82%;
+    top: 32%;
+}
+.sap2 {
     left: 17.064%;
     width: initial;
-    height: 100%;
- }
- .iris1{
-     width: 75%;
+    height: 72%;
+    top: 14%;
+}
+ .iris1 {
+    width: 80%;
     left: 16%;
- }
- .iris2{
-    width: 70%;
+    top: 31%;
+}
+.iris2 {
+    width: 78%;
     left: 15%;
- }
+    top: 28%;
+  }
 }
 @media screen and (min-width: 570px) and (max-width: 799px) and (min-height: 400px) {
   #resumeLink{
@@ -535,13 +601,14 @@ background-image: url(img/11.png);
       margin: 0 auto;
       padding-top: 4%;
   }
-  #imageInnerContainer{
-        width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      position: relative;
-      top: 0;
-  }
+  #imageInnerContainer {
+    width: 59%;
+    height: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
   #alphabetSoupContainer{
         width: 100%;
       height: 100%;
@@ -551,30 +618,54 @@ background-image: url(img/11.png);
       left: 0%;
       z-index: -1;
   }
+  #descDiv {
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    top: 12%;
+}
      .ios1{
-    left:28.064%;
-    width: 42%
+         left: 19.064%;
+    width: 39%;
+    top: 10%;
  }
+ #descP {
+    font-family: serif;
+    color: aliceblue;
+    font-size: 105%;
+    font-weight: bolder;
+}
+#descList {
+    text-align: left;
+    color: aliceblue;
+    font-size: 91%;
+    font-weight: bolder;
+}
  .ios2{
-    left:28.064%;
-    width: 42%
+         left: 19.064%;
+    width: 39%;
+    top: 10%;
  }
  .sap1{
-    left:16%;
-    width: 70%
+        left: 9%;
+    width: 70%;
+    top: 26%;
  }
  .sap2{
-    left: 28.064%;
+        left: 12.064%;
     width: initial;
-    height: 100%;
+    height: 73%;
+    top: 11%;
  }
  .iris1{
-     width: 75%;
-    left: 16%;
+        width: 69%;
+    left: 11%;
+    top: 26%;
  }
  .iris2{
-    width: 70%;
-    left: 15%;
+        width: 70%;
+    left: 11%;
+    top: 22%;
  }
 }
 @media screen and (max-height: 399px){
@@ -807,6 +898,30 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  #descDiv {
+    position: absolute;
+    right: 1%;
+    width: 50%;
+    top: 12%;
+}
+  #descP {
+    font-family: serif;
+    color: aliceblue;
+    font-size: 159%;
+    font-weight: bolder;
+}
+  #descList {
+    text-align: left;
+    color: aliceblue;
+    font-size: 117%;
+    font-weight: bolder;
+    padding-left: 26px;
+}
+  .iris2 {
+    width: 76%;
+    left: 7%;
+    top: 26%;
+}
 
   #resumeLink {
     bottom: 19%;
@@ -851,36 +966,32 @@ and (orientation : portrait) {
     bottom: 27%;
     left: 49%;
     }
-    .ios2 {
+   .ios2 {
     left: 17.064%;
-    width: 60%;
-    top:5%;
-  }
-  .ios1 {
-    left: 17.064%;
-    width: 60%;
-    top: 5%;
-  }
-  .sap2 {
-    left: 13.064%;
-    width: auto;
-    top: 5%;
-    height: 119%;
-}
-.sap1 {
-    left: 0%;
-    width: 100%;
+    width: 51%;
     top: 15%;
 }
-.iris2 {
-    width: 100%;
-    left: 0%;
-    top: 12%;
+  .ios1 {
+    left: 17.064%;
+    width: 51%;
+    top: 15%;
 }
+ .sap2 {
+    left: 13.064%;
+    width: auto;
+    top: 19%;
+    height: 73%;
+}
+.sap1 {
+    left: 4%;
+    width: 79%;
+    top: 23%;
+}
+
 .iris1 {
-    width: 100%;
-    left: 0%;
-    top: 22%;
+    width: 79%;
+    left: 5%;
+    top: 30%;
 }
 /* Styles */
 }
@@ -942,36 +1053,37 @@ and (min-width : 1224px) {
       to right, 
       orange, darkred
     );*/
-background-image: url(img/11.png);
   }
 
-  #imageInnerContainer{
-    width:90%;
-    height:70%;
+  #imageInnerContainer {
+    width: 90%;
+    height: 63%;
     margin: 0 auto;
-    position:relative;
-    top:20%;
-  }
- .ios1{
-    left:28.064%;
-    width: 42%
- }
- .ios2{
-    left:28.064%;
-    width: 42%
- }
+    position: relative;
+    top: 5%;
+}
+ .ios1 {
+    left: 29.064%;
+    width: 35%;
+}
+ .ios2 {
+     left: 29.064%;
+    width: 35%;
+}
  .sap1{
-    left:16%;
-    width: 70%
+        left: 12%;
+    width: 73%;
+    top: 5%;
  }
  .sap2{
     left:28.064%;
     width: initial;
-    height: 100%;
+    height: 87%;
  }
  .iris1{
-     width: 75%;
-    left: 16%;
+    width: 75%;
+    left: 8%;
+    top: 10%;
  }
  .iris2{
     width: 70%;
@@ -1126,7 +1238,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
       to right, 
       orange, darkred
     );*/
-background-image: url(img/11.png);
+
       }
      #imageInnerContainer{
         width: 100%;
@@ -1203,6 +1315,12 @@ background-image: url(img/11.png);
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2)
 {  
+  #descList {
+    text-align: left;
+    color: aliceblue;
+    font-size: 92%;
+    padding-left: 19px;
+}
 #resumeLink {
     bottom: 41%;
     left: 33%;
@@ -1268,40 +1386,49 @@ background-image: url(img/11.png);
     bottom: 25%;
     left: 44%;
     } 
-    .sap2 {
+  .sap2 {
     left: 9.064%;
     width: initial;
-    height: 95%;
-    top: 5%;
-    }
-    .sap1 {
-    left: -2%;
-    width: 100%;
-    top: 18%;
-    }
-    .ios2 {
+    height: 78%;
+    top: 15%;
+}
+.sap1 {
+    left: 5%;
+    width: 95%;
+    top: 29%;
+}
+.ios2 {
     left: 15.064%;
-    width: 65%;
+    width: 77%;
     top: 5%;
-    }
-    .ios1 {
+}
+ .ios1 {
     left: 15.064%;
-    width: 65%;
+    width: 77%;
     top: 5%;
-    }
+}
     .iris2 {
-    width: 100%;
-    left: 0%;
-    top: 25%;
-    }
+    width: 91%;
+    left: 6%;
+    top: 37%;
+}
     .iris1 {
-    width: 100%;
-    left: 0%;
-    top: 25%;
-    }
+    width: 92%;
+    left: 6%;
+    top: 36%;
+}
     .bannerImagePage4{
       z-index: -1;
     }
+    #alphabetSoupContainer {
+    width: 100%;
+    height: 98%;
+    font-family: coolio;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+      z-index: -1;
+}
 }
 
 /* iPhone 6 Plus landscape */
@@ -1310,7 +1437,12 @@ background-image: url(img/11.png);
   and (max-device-width: 736px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 3)
-{  #resumeLink {
+{  
+  #descDiv{
+    display: none;
+  }
+
+  #resumeLink {
     bottom: 36%;
     left: 32%;
     color: aliceblue;
@@ -1364,7 +1496,7 @@ background-image: url(img/11.png);
       to right, 
       orange, darkred
     );*/
-background-image: url(img/11.png);
+
   }
   #imageInnerContainer{
         width: 100%;

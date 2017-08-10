@@ -166,7 +166,7 @@ var firstTimeGoingtoPage3 = true;
       }
       else if (index == 1){
         shouldAnimateAlphabetSoup = true;
-        animateSoup()
+       // animateSoup()
         $('#bannerLink').removeClass('bannerLinkPage1');
         $('#bannerLink').removeClass('bannerLinkPage2');
         $('#bannerLink').removeClass('bannerLinkPage3');
@@ -262,7 +262,7 @@ var firstTimeGoingtoPage3 = true;
       }
       else if (index == 1){
         shouldAnimateAlphabetSoup = true;
-        animateSoup()
+       // animateSoup()
         $('#bannerLink').removeClass('bannerLinkPage1');
         $('#bannerLink').removeClass('bannerLinkPage2');
         $('#bannerLink').removeClass('bannerLinkPage3');
@@ -341,7 +341,7 @@ var firstTimeGoingtoPage3 = true;
       }
       else if (page_index == 2){
         shouldAnimateAlphabetSoup = true;
-        animateSoup()
+       // animateSoup()
         $('#bannerLink').removeClass('bannerLinkPage1');
         $('#bannerLink').removeClass('bannerLinkPage2');
         $('#bannerLink').removeClass('bannerLinkPage3');
@@ -615,7 +615,7 @@ var firstTimeGoingtoPage3 = true;
     return false;
   }
 
-animateSoup()
+//animateSoup()
  function animateSoup(){
     if (shouldAnimateAlphabetSoup) {
       scrambleOthers();

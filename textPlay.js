@@ -56,14 +56,20 @@ var meny = Meny.create({
 //
 
   var content = [{
-    title: "iOS Developer.",
-    desc: "Space Commute, Feeder"
+    title: "iOS Developer",
+    desc: "Space Commute, Feeder(Coming soon)"
   }, {
     title: "SAP Labs",
     desc: "SAP BI IOs Application. Charting, Push Notifications, Html Viewer, Gestures, Animations"
   }, {
     title: "Iris Recognition",
     desc: "C# EmguCV Daugman's Method, Masek Method"
+  }, {
+    title: "Facebook Search App and Website",
+    desc: "Front end using Bootstrap, Angular and Backend hosted on AWS"
+  }, {
+    title: "Sentiment Analysis using Mathematica",
+    desc: "On Amazon reviews using Neural Networks"
   }];
   var currentPage = 0;
   //generate content
@@ -282,13 +288,148 @@ var meny = Meny.create({
       $('#bannerLink').addClass('bannerLinkPage3');
       $('#bannerImage').addClass('bannerImagePage3');
     }
+    else if(pageNumber == 3){
+            $('#soup-nav').removeClass('page1nav')
+      $('#soup-nav').removeClass('page2nav')
+      $('#soup-nav').removeClass('page3nav')
+      $('#soup-nav').addClass('page3nav')
+       $('#alphabetContainer').removeClass('page1')
+      $('#alphabetContainer').removeClass('page2')
+      $('#alphabetContainer').removeClass('page3')
+      $('#alphabetContainer').addClass('page3')
+
+      $('#workImage1').attr('src','img/iris1.jpg')
+      $('#workImage1').removeClass('largerWidthThanParentDiv')
+      $('#workImage1').removeClass('smallerWidthThanParentDiv')
+      $('#workImage1').addClass('largerWidthThanParentDiv')
+
+      $('#workImage1').removeClass('ios1')
+      $('#workImage1').removeClass('sap1')
+      $('#workImage1').removeClass('iris1')
+      $('#workImage1').addClass('iris1')
+
+
+      $('#workImage2').attr('src','img/iris2.png')
+      // $('#workImage2').css('width','65%')
+      // $('#workImage2').css('left','18%') 
+      $('#workImage2').removeClass('largerWidthThanParentDiv')
+      $('#workImage2').removeClass('smallerWidthThanParentDiv')
+      $('#workImage2').addClass('largerWidthThanParentDiv') 
+
+      $('#workImage2').removeClass('ios2')
+      $('#workImage2').removeClass('sap2')
+      $('#workImage2').removeClass('iris2')
+      $('#workImage2').addClass('iris2')
+
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage4');
+      $('#bannerImage').removeClass('bannerImagePage1');
+      $('#bannerImage').removeClass('bannerImagePage2');
+      $('#bannerImage').removeClass('bannerImagePage3');
+      $('#bannerImage').removeClass('bannerImagePage4');
+
+      $('#bannerLink').addClass('bannerLinkPage3');
+      $('#bannerImage').addClass('bannerImagePage3');
+    }
+    else if(pageNumber == 4){
+            $('#soup-nav').removeClass('page1nav')
+      $('#soup-nav').removeClass('page2nav')
+      $('#soup-nav').removeClass('page3nav')
+      $('#soup-nav').addClass('page3nav')
+       $('#alphabetContainer').removeClass('page1')
+      $('#alphabetContainer').removeClass('page2')
+      $('#alphabetContainer').removeClass('page3')
+      $('#alphabetContainer').addClass('page3')
+
+      $('#workImage1').attr('src','img/iris1.jpg')
+      $('#workImage1').removeClass('largerWidthThanParentDiv')
+      $('#workImage1').removeClass('smallerWidthThanParentDiv')
+      $('#workImage1').addClass('largerWidthThanParentDiv')
+
+      $('#workImage1').removeClass('ios1')
+      $('#workImage1').removeClass('sap1')
+      $('#workImage1').removeClass('iris1')
+      $('#workImage1').addClass('iris1')
+
+
+      $('#workImage2').attr('src','img/iris2.png')
+      // $('#workImage2').css('width','65%')
+      // $('#workImage2').css('left','18%') 
+      $('#workImage2').removeClass('largerWidthThanParentDiv')
+      $('#workImage2').removeClass('smallerWidthThanParentDiv')
+      $('#workImage2').addClass('largerWidthThanParentDiv') 
+
+      $('#workImage2').removeClass('ios2')
+      $('#workImage2').removeClass('sap2')
+      $('#workImage2').removeClass('iris2')
+      $('#workImage2').addClass('iris2')
+
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage4');
+      $('#bannerImage').removeClass('bannerImagePage1');
+      $('#bannerImage').removeClass('bannerImagePage2');
+      $('#bannerImage').removeClass('bannerImagePage3');
+      $('#bannerImage').removeClass('bannerImagePage4');
+
+      $('#bannerLink').addClass('bannerLinkPage3');
+      $('#bannerImage').addClass('bannerImagePage3');
+    }
+    else if(pageNumber == 5){
+      $('#soup-nav').removeClass('page1nav')
+      $('#soup-nav').removeClass('page2nav')
+      $('#soup-nav').removeClass('page3nav')
+      $('#soup-nav').addClass('page3nav')
+       $('#alphabetContainer').removeClass('page1')
+      $('#alphabetContainer').removeClass('page2')
+      $('#alphabetContainer').removeClass('page3')
+      $('#alphabetContainer').addClass('page3')
+
+      $('#workImage1').attr('src','img/iris1.jpg')
+      $('#workImage1').removeClass('largerWidthThanParentDiv')
+      $('#workImage1').removeClass('smallerWidthThanParentDiv')
+      $('#workImage1').addClass('largerWidthThanParentDiv')
+
+      $('#workImage1').removeClass('ios1')
+      $('#workImage1').removeClass('sap1')
+      $('#workImage1').removeClass('iris1')
+      $('#workImage1').addClass('iris1')
+
+
+      $('#workImage2').attr('src','img/iris2.png')
+      // $('#workImage2').css('width','65%')
+      // $('#workImage2').css('left','18%') 
+      $('#workImage2').removeClass('largerWidthThanParentDiv')
+      $('#workImage2').removeClass('smallerWidthThanParentDiv')
+      $('#workImage2').addClass('largerWidthThanParentDiv') 
+
+      $('#workImage2').removeClass('ios2')
+      $('#workImage2').removeClass('sap2')
+      $('#workImage2').removeClass('iris2')
+      $('#workImage2').addClass('iris2')
+
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage1');
+      $('#bannerLink').removeClass('bannerLinkPage4');
+      $('#bannerImage').removeClass('bannerImagePage1');
+      $('#bannerImage').removeClass('bannerImagePage2');
+      $('#bannerImage').removeClass('bannerImagePage3');
+      $('#bannerImage').removeClass('bannerImagePage4');
+
+      $('#bannerLink').addClass('bannerLinkPage3');
+      $('#bannerImage').addClass('bannerImagePage3');
+    }
    }
   function arrangeCurrentPage() {
     for (var i = 0; i < content[currentPage].title.length; i++) {
       $(".mutable:eq(" + currentPage + ") > .soup-title > .letter").eq(i).css({
         left: $(".position-data:eq(" + currentPage + ") > .soup-title > .letter").eq(i).offset().left + "px",
         top: $(".position-data:eq(" + currentPage + ") > .soup-title > .letter").eq(i).offset().top + "px",
-         color: "black",
+         
         zIndex: 9001,
              opacity: "1.0"
       });
@@ -345,9 +486,9 @@ var meny = Meny.create({
            $(".mutable:eq(" + i + ") > " + parts[j][1] + " > .letter").eq(k).css({
              left: randLeft,
               top: randTop,
-               color: "#418082",
+               
              zIndex: "initial",
-             opacity: "0.3"
+             opacity: "0.4"
             });
           }
           else{
@@ -356,7 +497,7 @@ var meny = Meny.create({
               top: randTop,
               // color: "",
              zIndex: "initial",
-             opacity: "0.3"
+             opacity: "0.4"
             });
 
 

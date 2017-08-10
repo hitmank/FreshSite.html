@@ -22,14 +22,7 @@
   z-index: 9002;
   font-size: 64px;
 }
-#alphabetSoupContainer{
-/*background-image:
-    linear-gradient(
-      to right, 
-      white, orange
-    );*/
-background-image: url(img/11.png);
-}
+
 
  @font-face { 
   font-family: coolio; 
@@ -45,11 +38,13 @@ background-image: url(img/11.png);
   font-size: 22px;
 }
 .soup-title > .letter {
-  color: black;
+  color: snow;
+  font-weight: bolder;
   /*opacity: 0.5;*/
 }
 .soup-desc > .letter {
-  color: #418082;
+  color: brown;
+  font-family: Pacifico, cursive;
   /*opacity: 0.5;*/
 }
 html, body {
