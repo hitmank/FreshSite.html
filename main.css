@@ -10,6 +10,7 @@
   text-align: left;
   color: aliceblue;
   font-size: 137%;
+  display: none;
 }
 
 #myWorkHeader{    position: absolute;
@@ -237,6 +238,30 @@ p{
 
 }*/
 @media screen and (min-width: 800px) and (max-width: 1225px) and (min-height: 400px){
+
+  .fb1{
+    height: 81%;
+    position: absolute;
+    left: -8%;
+    top: 40%;
+  }
+  .fb2{
+    height: 81%;
+    position: absolute;
+    left: -8%;
+    top: 40%;
+  }
+  .sa1{
+    height: 73%;
+    left: 0%;
+    top: 24%;
+  }
+  .sa2{
+    width: 103%;
+    position: absolute;
+    top: 24%;
+    left: 0%;
+  }
   #resumeLink{
  
     left: 8%;
@@ -361,7 +386,32 @@ p{
  }
 
 }
+
+
 @media screen and (max-width: 569px) and (min-height: 400px) {
+
+  .sa2{
+        height: 39%;
+    top: 17%;
+    left: 4%;
+  }
+  .sa1{
+        height: 39%;
+    top: 17%;
+    left: 4%;
+  }
+  .fb1{
+height: 38%;
+    left: 13%;
+    top: 18%;
+}
+  
+  .fb2{
+height: 38%;
+    left: 13%;
+    top: 18%;
+}
+  
   #descList {
     text-align: left;
     color: aliceblue;
@@ -372,6 +422,9 @@ p{
     font-family: serif;
     color: aliceblue;
     font-size: 104%;
+}
+#descP.pForLarge{
+  font-size: 83%;
 }
   #descDiv {
     position: absolute;
@@ -523,6 +576,28 @@ p{
   }
 }
 @media screen and (min-width: 570px) and (max-width: 799px) and (min-height: 400px) {
+
+   .fb1{
+        height: 48%;
+    position: absolute;
+    left: 9%;
+    top: 22%;
+  }
+  .fb2{
+        top: 22%;
+    left: 6%;
+    height: 47%;
+  }
+  .sa1{
+        height: 49%;
+    left: 3%;
+    top: 24%;
+  }
+  .sa2{
+  top: 28%;
+    left: 6%;
+    height: 44%;
+  }
   #resumeLink{
     bottom: 26%;
     left: 40%;
@@ -666,6 +741,9 @@ p{
         width: 70%;
     left: 11%;
     top: 22%;
+ }
+ #descP.pForLarge{
+  font-size: 88%;
  }
 }
 @media screen and (max-height: 399px){
@@ -898,6 +976,26 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+  .fb1{
+        top: 29%;
+    left: 6%;
+    height: 39%;
+  }
+  .fb2{
+        top: 29%;
+    left: 6%;
+    height: 39%;
+  }
+  .sa1{
+        top: 22%;
+    left: 6%;
+    height: 37%;
+  }
+  .sa2{
+        top: 22%;
+    left: 6%;
+    height: 37%;
+  }
   #descDiv {
     position: absolute;
     right: 1%;
@@ -999,6 +1097,30 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
+  .fb1{
+    height: 79%;
+    position: absolute;
+    left: 4%;
+    top: 8%;
+  }
+  .fb2{
+    height: 79%;
+    position: absolute;
+    left: 4%;
+    top: 8%;
+  }
+  .sa1{
+    height: 76%;
+    position: absolute;
+    left: 4%;
+    top: 12%;
+  }
+  .sa2{
+    height: 75%;
+    left: 0%;
+    top: 15%;
+  }
+
   #mapContainer{
     width: 65%;
     margin: 0 auto;
@@ -1146,6 +1268,26 @@ only screen and (min-device-pixel-ratio : 1.5) {
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2)
 {   
+  .fb1{
+        height: 51%;
+    left: 0%;
+    top: 16%;
+  }
+  .fb2{
+        height: 51%;
+    left: 0%;
+    top: 16%;
+  }
+  .sa1{
+        height: 51%;
+    left: 0%;
+    top: 16%;
+  }
+  .sa2{
+        height: 51%;
+    left: 0%;
+    top: 16%;
+  }
 #resumeLink {
     position: absolute;
     bottom: 39%;
