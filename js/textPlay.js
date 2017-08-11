@@ -162,7 +162,7 @@ var meny = Meny.create({
       $('#alphabetContainer').removeClass('page3')
       $('#alphabetContainer').addClass('page1')
 
-      $('#workImage1').attr('src','img/spacegame.jpg')  
+      $('#workImage1').attr('src','resources/img/spacegame.jpg')  
       // $('#workImage1').css('left','')
       // $('#workImage1').css('width','42%') 
       $('#workImage1').removeClass('largerWidthThanParentDiv')
@@ -177,7 +177,7 @@ var meny = Meny.create({
       $('#workImage1').addClass('ios1')
       
 
-      $('#workImage2').attr('src','img/spacegame2.jpg')  
+      $('#workImage2').attr('src','resources/img/spacegame2.jpg')  
       $('#workImage2').removeClass('largerWidthThanParentDiv')
       $('#workImage2').removeClass('smallerWidthThanParentDiv')
       $('#workImage2').addClass('smallerWidthThanParentDiv')
@@ -218,7 +218,7 @@ var meny = Meny.create({
       $('#alphabetContainer').removeClass('page3')
       $('#alphabetContainer').addClass('page2')
 
-      $('#workImage1').attr('src','img/sap1.jpg')
+      $('#workImage1').attr('src','resources/img/sap1.jpg')
       // $('#workImage1').css('left','16%')
       // $('#workImage1').css('width','70%') 
       $('#workImage1').removeClass('largerWidthThanParentDiv')
@@ -233,7 +233,7 @@ var meny = Meny.create({
       $('#workImage1').addClass('sap1')
 
 
-      $('#workImage2').attr('src','img/sap2.png') 
+      $('#workImage2').attr('src','resources/img/sap2.png') 
       // $('#workImage2').css('left','')
       // $('#workImage2').css('width','') 
       $('#workImage2').removeClass('largerWidthThanParentDiv')
@@ -274,7 +274,7 @@ var meny = Meny.create({
       $('#alphabetContainer').removeClass('page3')
       $('#alphabetContainer').addClass('page3')
 
-      $('#workImage1').attr('src','img/iris1.jpg')
+      $('#workImage1').attr('src','resources/img/iris1.jpg')
       $('#workImage1').removeClass('largerWidthThanParentDiv')
       $('#workImage1').removeClass('smallerWidthThanParentDiv')
       $('#workImage1').addClass('largerWidthThanParentDiv')
@@ -287,7 +287,7 @@ var meny = Meny.create({
       $('#workImage1').addClass('iris1')
 
 
-      $('#workImage2').attr('src','img/iris2.png')
+      $('#workImage2').attr('src','resources/img/iris2.png')
       // $('#workImage2').css('width','65%')
       // $('#workImage2').css('left','18%') 
       $('#workImage2').removeClass('largerWidthThanParentDiv')
@@ -326,7 +326,7 @@ var meny = Meny.create({
       $('#alphabetContainer').removeClass('page3')
       $('#alphabetContainer').addClass('page3')
 
-      $('#workImage1').attr('src','img/fb11.png')
+      $('#workImage1').attr('src','resources/img/fb11.png')
       $('#workImage1').removeClass('largerWidthThanParentDiv')
       $('#workImage1').removeClass('smallerWidthThanParentDiv')
       $('#workImage1').addClass('largerWidthThanParentDiv')
@@ -339,7 +339,7 @@ var meny = Meny.create({
       $('#workImage1').addClass('fb1')
 
 
-      $('#workImage2').attr('src','img/fb2.png')
+      $('#workImage2').attr('src','resources/img/fb2.png')
       // $('#workImage2').css('width','65%')
       // $('#workImage2').css('left','18%') 
       $('#workImage2').removeClass('largerWidthThanParentDiv')
@@ -379,7 +379,7 @@ var meny = Meny.create({
       $('#alphabetContainer').removeClass('page3')
       $('#alphabetContainer').addClass('page3')
 
-      $('#workImage1').attr('src','img/sa1.png')
+      $('#workImage1').attr('src','resources/img/sa1.png')
       $('#workImage1').removeClass('largerWidthThanParentDiv')
       $('#workImage1').removeClass('smallerWidthThanParentDiv')
       $('#workImage1').addClass('largerWidthThanParentDiv')
@@ -392,7 +392,7 @@ var meny = Meny.create({
       $('#workImage1').addClass('sa1')
 
 
-      $('#workImage2').attr('src','img/sa2.png')
+      $('#workImage2').attr('src','resources/img/sa2.png')
       // $('#workImage2').css('width','65%')
       // $('#workImage2').css('left','18%') 
       $('#workImage2').removeClass('largerWidthThanParentDiv')

@@ -37,7 +37,7 @@
 
 
 #gitImg{
-  content:url(img/b.png);
+  content:url(../resources/img/b.png);
 }
 
 #contactP1{
@@ -163,7 +163,7 @@ body{
 
 @font-face { 
    font-family: scottFont; 
-   src: url('scott.ttf');
+   src: url('../resources/fonts/scott.ttf');
        
  } 
 p{
@@ -277,7 +277,7 @@ p{
     left: 30%;
 }
 #gitImg{
-  content:url(img/c.png);
+  content:url(resources/img/c.png);
 }
 #contactP2 {
     position: absolute;
